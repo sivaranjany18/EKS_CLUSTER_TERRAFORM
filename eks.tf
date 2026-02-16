@@ -5,7 +5,7 @@ module "eks" {
 
   cluster_name                   = local.name
   cluster_endpoint_public_access = true
-  create_kms_key = false 
+ 
 
   cluster_addons = {
     coredns = {
