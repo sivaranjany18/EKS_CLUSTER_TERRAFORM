@@ -1,8 +1,7 @@
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.15.1"
-  create_kms_key = false
-  cluster_encryption_config = {}
+ 
 
   cluster_name                   = local.name
   cluster_endpoint_public_access = true
