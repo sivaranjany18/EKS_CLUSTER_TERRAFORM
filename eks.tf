@@ -25,7 +25,7 @@ module "eks" {
   # EKS Managed Node Group(s)
   eks_managed_node_group_defaults = {
     ami_type       = "AL2023_x86_64_STANDARD"
-    instance_types = ["t2.medium"]
+    instance_types = ["t3.micro"]
 
     attach_cluster_primary_security_group = true
   }
