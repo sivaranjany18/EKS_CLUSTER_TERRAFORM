@@ -7,14 +7,14 @@ terraform {
   }
  # Adding Backend as S3 for Remote State Storage
   backend "s3" {
-    bucket = "cluster-003"
-    key    = "ajs/terraform.tfstate"
-    region = "ap-southeast-1"   
+    bucket = "siva-terraform-state-2026"
+    key    = "eks/terraform.tfstate"
+    region = "ap-south-1"   
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 locals {
